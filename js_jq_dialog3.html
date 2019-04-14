@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Setup</title>
+		<link rel="stylesheet" type="text/css" href="js_jq_dialog3.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="js_jq_dialog3.js"></script>
+	</head>
+	<body>
+		<form name="drawing" id="drawing">
+			<div class="container">
+				<div class="title_bar_div">
+					<div class="ins_obj_div">Page Setup</div>
+					<div class="close_div">
+						<label class="close_label">&times;</label>
+					</div>
+					<div class="question_mark">
+						<label class="qus_label">&#63;</label>
+					</div>
+				</div>
+				<div class="div_left">
+					<div class="sub_div1">
+						<div class="slides_div">
+							<label><u>S</u>lides sized for:</label>
+						</div>
+						<select class="drop_select" onchange="filtro(this)">
+							<option value="1" id="val1">On-screen Show (4:3)</option>
+							<option value="2" id="val2">Letter Paper (8.5x11 in)</option>
+							<option value="3" id="val3">Ledger Paper (11x17 in)</option>
+							<option value="4" id="val4">A3 Paper (297x420 mm)</option>
+							<option value="5" id="val5">A4 Paper (210x297 mm)</option>
+							<option value="6" id="val6">B4 (ISO) Paper (250x353 mm)</option>
+							<option value="7" id="val7">B5 (ISO) Paper (176x250 mm)</option>
+							<option value="8" id="val8">35mm Slides</option>
+							<option value="9" id="val9">Overhead</option>
+							<option value="10" id="val10">Banner</option>
+							<option value="11" id="val11">On-screen Show (16:9)</option>
+							<option value="12" id="val12">On-screen Show (16:10)</option>
+							<option value="13" id="val13">Widescreen</option>
+							<option value="14" id="val14">Custom</option>
+						</select>
+					</div>
+					<div class="sub_div2">
+						<div class="with_label">
+							<label for="width_number"><u>W</u>idth:</label>
+						</div>
+						<div class="layout">
+							<input type="number" name="width_number" id="width_number" max="100" min="1" step="0.1" value="25.4"/>
+							<div class="inches_div">Inches</div>
+						</div>
+					</div>
+					<div class="sub_div2">
+						<div class="with_label">
+							<label for="height_number">H<u>e</u>ight:</label>
+						</div>
+						<div class="layout">
+							<input type="number" name="height_number" id="height_number" max="100" min="1" step="0.1" value="19.05"/>
+							<div class="inches_div">Inches</div>
+						</div>
+					</div>
+					<div class="sub_div1">
+						<div class="with_label">
+							<label for="slides_number"><u>N</u>umber slides from:</label>
+						</div>
+						<input type="number" name="slides_number" id="slides_number" max="100" step="0.1" min="1" value="1"/>
+					</div>
+				</div>
+				<div class="center_div">
+					<fieldset class="fieldset_orientation">
+						<legend class="legen_orient">Orientation</legend>
+						<div class="legend_div">
+							<fieldset class="fieldset_slides">
+								<legend class="legen_slides">Slides</legend>
+								<div class="sub_legend">
+									<div class="legend_img">
+										<img src="dialog3_image/landscape.jpg" alt="landscape.jpg" />
+									</div>
+									<div class="radio_div">
+										<div class="type_radio">
+											<input type="radio" name="type_radio" id="portrait_radio" value="portrait" accesskey="p"/>
+											<label for="portrait_radio"><u>P</u>ortrait</label>
+										</div>
+										<div class="land_div">
+											<input type="radio" name="type_radio" id="landscape_radio" value="portrait" checked="checked" accesskey="l"/>
+											<div class="label_right">
+												<label for="landscape_radio"><u>L</u>andscape</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+						<div class="outline_div">
+							<fieldset class="fiel_slides">
+								<legend class="legen_note">Notes, handouts & outline</legend>
+								<div class="sub_legend2">
+									<div class="page_img">
+										<img src="dialog3_image/portrait.jpg" alt="portrait.jpg" />
+									</div>
+									<div class="radio_div">
+										<div class="type_radio_box">
+											<input type="radio" name="type_rad" id="portrait_rad" checked="checked" value="portrait" accesskey="o"/>
+											<label for="portrait_rad">P<u>o</u>rtrait</label>
+										</div>
+										<div class="land_div">
+											<input type="radio" name="type_rad" id="landscape_rad" value="portrait" accesskey="a"/>
+											<div class="label_right">
+												<label for="landscape_rad">L<u>a</u>ndscape</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+					</fieldset>
+				</div>
+				<div class="right_div">
+					<div class="btn_box1">
+						<button type="button" id="ok_btn" name="ok_btn" class="buton" autofocus="autofocus">OK</button>
+					</div>
+					<div class="btn_box2">
+						<button type="button" id="cancel_btn" name="cancel_btn" class="buton">Cancel</button>
+					</div>
+					<div class="open_dialog" id="open_dialog" title="Microsoft PowerPoint">
+						<img src="dialog3_image/ok_open_pop.gif" alt="ok_open_pop.gif" />
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

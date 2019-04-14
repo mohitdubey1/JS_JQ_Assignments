@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rainbow</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel='icon' type='image/png' href='js_game1/tool_tip.png'>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="js_game1.css" />
+		<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>	
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	</head>
+	<body>
+		<form name="js_game_frm" id="js_game_frm">
+			<div class="container">
+				<div class="my_container">
+					<div class="col-lg-3">
+						<button type="button" class="btn btn-success btn-block btn-lg" name="rainbow_btn" id="rainbow_btn" data-toggle="tooltip" title="Rainbow!">Animated Rainbow</button>
+					</div>
+					<div class="canvas_div">
+						<canvas id="my_canvas" height="500" width="500"></canvas>
+					</div>
+				</div>
+				<div class="button_div">
+					<div class="row">
+						<div class="col-lg-3">
+							<button type="button" class="btn btn-info btn-block btn-lg" name="rectangle_btn" id="rectangle_btn" value="i am rectangle" data-toggle="tooltip" title="Rectangle!">I am Rectangle</button>
+						</div>
+						<div class="col-lg-3">
+							<button type="button" class="btn btn-info btn-block btn-lg" name="circle_btn" id="circle_btn" value="i am circle" data-toggle="tooltip" title="Circle!">I am Circle</button>
+						</div>
+						<div class="col-lg-3">
+							<button type="button" class="btn btn-info btn-block btn-lg" name="square_btn" id="square_btn" value="i am square" data-toggle="tooltip" title="Square!">I am Square</button>
+						</div>
+						<div class="col-lg-3">
+							<button type="button" class="btn btn-info btn-block btn-lg" name="history_btn" id="history_btn" onclick="clickHistory(this)" data-toggle="tooltip" title="History!">I am History</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<script src="js_game1.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();   
+		});
+		</script>
+	</body>
+</html>

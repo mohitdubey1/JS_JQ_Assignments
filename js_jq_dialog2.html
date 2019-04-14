@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insert Object</title>
+		<link rel="stylesheet" type="text/css" href="js_jq_dialog2.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript" src="js_jq_dialog2.js"></script>
+	</head>
+	<body>
+		<form name="drawing" id="drawing">
+			<div class="container">
+				<div class="title_bar_div">
+					<div class="ins_obj_div">Insert Object</div>
+					<div class="close_div">
+						<label class="close_label">&times;</label>
+					</div>
+					<div class="question_mark">
+						<label class="qus_label">&#63;</label>
+					</div>
+				</div>
+				<div class="show_nex">
+					<div class="radio_div">
+						<div class="create_radio1">
+							<input type="radio" name="create_radio" id="new_radio" value="new" accesskey="n" class="new_radio_btn"/>
+							<label for="new_radio">Create <u>n</u>ew</label>
+						</div>
+						<div class="create_radio2">
+							<input type="radio" name="create_radio" id="file_radio" value="file" checked="checked" accesskey="f"/>
+							<label for="file_radio" class="create_lab">Create from <u>f</u>ile</label>
+						</div>
+					</div>
+					<div class="sel_show_img">
+						<img src="dialog2_image/new_create_dialog2.gif" alt="new_create_dialog2.gif" class="show_next_div"/>
+					</div>
+					<div class="sel_show" id="hide">
+						<div class="select_type">
+							<div class="file_div">
+								<label for="file_text">Fil<u>e:</u></label>
+							</div>
+							<div class="type_text">
+								<input type="text" name="file_text" id="file_text" class="file_text" value=" *.*"/>
+							</div>
+							<div class="browse_btn">
+								<span>
+									<button type="button" name="browse_btn" id="browse_btn" class="browse_button" accesskey="b"><u>B</u>rowse...</button>
+									<input type="file" class="file_browse"/>
+								</span>
+							</div>
+							<div class="link_chk">
+								<input type="checkbox" name="link_chk1" id="link_chk1" value="display" class="chk_label" accesskey="l"/>
+								<label for="link_chk1" class="link_lable"><u>L</u>ink</label>
+							</div>
+						</div>
+					</div>
+						<div class="btn_div"> 
+							<div class="btn_box1">
+								<button type="button" name="ok_btn" id="ok_btn" class="ok_btn" autofocus="autofocus">OK</button>
+							</div>
+							<div class="btn_box2">
+								<button type="button" name="cancel_btn" id="cancel_btn" class="cancel_btn">Cancel</button>
+							</div>
+							<div class="div_chk">
+								<input type="checkbox" name="display_chk2" id="display_chk2" value="display" class="display_chk" accesskey="d"/>
+								<label for="display_chk2"><u>D</u>isplay as icon</label>
+							</div>
+							<div class="diplay_div">
+								<div class="show_div"></div>
+								<button type="button" accesskey="i" class="dis_btn" name="change_btn" id="change_btn">Change <u>i</u>con...</button>
+							</div>
+							<div class="open_dialog" id="open_dialog" title="Change Icon">
+								<img src="dialog2_image/change_icon_img.gif" alt="change_icon_img.gif" />
+							</div>
+							<div class="open_dialog2" id="open_dialog2" title="Microsoft PowerPoint">
+								<img src="dialog2_image/ok_click.gif" alt="ok_click.gif" />
+							</div>
+						</div>
+				
+					<div class="div_fieldset">
+						<fieldset class="result_field">
+							<legend class="res_legend">Result</legend>
+							<div class="image_div">
+								<div class="ins_image">
+									<div class="doc_image">
+										<img src="dialog2_image/new_insert.jpg" alt="new_insert.jpg" />
+									</div>
+								</div>
+								<span class="text_span">Inserts the contents of the file as an object into your presentation so that you can activate it using the application that created it.</span>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

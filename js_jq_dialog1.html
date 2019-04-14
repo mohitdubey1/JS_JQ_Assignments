@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insert Object</title>
+		<link rel="stylesheet" type="text/css" href="js_jq_dialog1.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript" src="js_jq_dialog1.js"></script>
+	</head>
+	<body>
+		<form name="drawing" id="drawing">
+			<div class="container">
+				<div class="title_bar_div">
+					<div class="ins_obj_div">Insert Object</div>
+					<div class="close_div">
+						<label class="close_label">&times;</label>
+					</div>
+					<div class="question_mark">
+						<label class="qus_label">&#63;</label>
+					</div>
+				</div>
+				<div class="radio_div">
+					<div class="create_radio">
+						<input type="radio" name="create_radio" id="new_radio" value="new" checked="checked" accesskey="n"/>
+						<label for="new_radio">Create <u>n</u>ew</label>
+					</div>
+					<div class="create_radio">
+						<input type="radio" name="create_radio" id="file_radio" value="file" accesskey="n"/>
+						<label for="file_radio">Create from <u>f</u>ile</label>
+					</div>
+				</div>
+				<div class="sel_show_div">
+					<img src="dialog1_image/chang_pop.png" class="set_img" alt="chang_pop.png" />
+				</div>
+				<div class="set_lef_div">
+					<div class="select_type" id="hide">
+						<div class="object_label">
+							<label>Object <u>t</u>ype:</label>
+						</div>
+						<select size="8" multiple="multiple" onchange="filtro(this)">
+							<option selected="selected" value="1" class="opt1">Adobe Acrobat Document</option>
+							<option value="2" class="opt2">Adobe Acrobat PDFXML Document</option>
+							<option value="3" class="opt3">Adobe Acrobat Security Settings Document</option>
+							<option value="4" class="opt4">Adobe Photoshop Image 13</option>
+							<option value="5" class="opt5">Bitmap Image</option>
+							<option value="6" class="opt6">Microsoft Equation 3.0</option>
+							<option value="7" class="opt7">Microsoft Graph Chart</option>
+							<option value="8" class="opt8">Microsoft Office Excel 97-2003 Worksheet</option>
+						</select>
+					</div>
+					<div class="btn_div"> 
+						<div class="btn_box1">
+							<button type="button" name="ok_btn" id="ok_btn" class="ok_btn" autofocus="autofocus">OK</button>
+						</div>
+						<div class="btn_box2">
+							<button type="button" name="cancel_btn" id="cancel_btn" class="cancel_btn">Cancel</button>
+						</div>
+						<div class="div_chk">
+							<input type="checkbox" name="display_chk" id="display_chk" value="display" accesskey="d"/>
+							<label for="display_chk"><u>D</u>isplay as icon</label>
+						</div>
+						<div class="diplay_div">
+							<div class="show_div">
+								<img src="dialog1_image/adobe_security.gif" alt="adobe_security.gif" />
+								<div id="doc_text">Adobe Acrobat Document</div>
+							</div>
+							<div>
+								<button type="button" accesskey="i" class="dis_btn" name="change_btn" id="change_btn">Change <u>i</u>con...</button>
+							</div>
+							<div class="open_dialog1" id="open_dialog1" title="Change Icon">
+								<img src="dialog1_image/dialog_acrobat.gif" alt="dialog_acrobat.gif" />
+							</div>
+							<div class="open_dialog2" id="open_dialog2" title="Microsoft PowerPoint">
+								<img src="dialog1_image/click_ok_btn.gif" alt="click_ok_btn.gif" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="div_fieldset">
+					<fieldset class="result_field">
+						<legend class="res_legend">Result</legend>
+						<div class="image_div">
+							<div class="ins_image">
+								<div class="doc_image">
+									<img src="dialog1_image/new_insert.jpg" alt="new_insert.jpg" />
+								</div>
+							</div>
+							<div class="text_span" id="insert_text">Inserts a new Adobe Acrobat Document object into your presentation.</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>First Game jQuery</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href="jquery_game1.css" type="text/css" rel="stylesheet">
+		<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>	
+		<script src="jquery_game1.js"></script>
+	</head>
+	<body class="body1">
+		<form name="game_frm" id="game_frm">
+			<div class="container">
+				<div class="row set_top_row" >
+					<div class="col-lg-5"></div>
+					<div class="top_div col-lg-2">
+						<div class="panel panel-primary drop_down ui-widget-content" id="top_box">
+							<div class="panel-heading text-center">Drag Down &nbsp;&nbsp;<i class="fa fa-arrow-circle-o-down down_drag"></i></div>
+							<div class="panel-body"><b>Hi</b> I am Dialog Box1</div>
+						</div>
+					</div>
+				</div>
+				<div class="row midel_div">
+					<div class="top_div col-lg-2">
+						<div class="panel panel-primary drop_down ui-widget-content" id="left_box">
+							<div class="panel-heading text-center">Drag Down &nbsp;&nbsp;<i class="fa fa-arrow-circle-right down_drag"></i></div>
+							<div class="panel-body"><b>Hi</b> I am Dialog Box2</div>
+						</div>
+					</div>
+					<div class="col-lg-8"></div>
+					<div class="top_div col-lg-2">
+						<div class="panel panel-primary drop_down ui-widget-content" id="right_box">
+							<div class="panel-heading text-center">Drag Down &nbsp;&nbsp;<i class="fa fa-arrow-circle-left down_drag"></i></div>
+							<div class="panel-body"><b>Hi</b> I am Dialog Box3</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-5"></div>
+					<div class="top_div col-lg-2">
+						<div class="panel panel-primary drop_down ui-widget-content" id="bottom_box">
+							<div class="panel-heading text-center">Drag Down &nbsp;&nbsp;<i class="fa fa-arrow-circle-o-up down_drag"></i></div>
+							<div class="panel-body"><b>Hi</b> I am Dialog Box4</div>
+						</div>
+					</div>
+				</div>
+				<div class="well bottom_div" id="set_drop"></div>
+				<div id="open_alert_box" title="Dragged Successfully" class="btn btn-info">
+					<div class="btn-primary"><i class="fa fa-hand-o-right down_drag"></i> &nbsp;&nbsp; Draggabel is Completed.</div>
+					<div class="h1"></div>
+					<button type="button" id="click_btn" name="click_btn" class="set_button">Click Me...</button>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

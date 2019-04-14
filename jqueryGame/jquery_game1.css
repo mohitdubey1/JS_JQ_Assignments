@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url('jquery_image1/hd-dark-wallpapers-4.jpg');
+	background-size: 1367px 667px;
+}
+.container{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 500px;
+}
+.panel-primary{
+	position: fixed;
+}
+.first_div,.bottom_div{
+	margin: auto;
+}
+.down_drag{
+    font-size: 27px;
+}
+.set_top_row {
+    height: 260px;
+}
+.midel_div{
+	height: 265px;
+}
+.bottom_div{
+	height: 200px;
+	width: 250px;
+	bottom: 310px;
+	border-width: 2px;
+	z-index: -1;
+}
+.bottom_div,.set_button,.dis_div{
+	background: #5BC0DE !important;
+}
+.bottom_div,.dis_div{
+	position: relative;
+}
+.set_button{
+	float: right;
+	color: #fff !important;
+	margin-top: 14px;
+}
